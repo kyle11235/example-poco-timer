@@ -1,0 +1,22 @@
+{
+    "options": [
+     [
+      "zlib:fPIC",
+      "True"
+     ],
+     [
+      "zlib:minizip",
+      "False"
+     ],
+     [
+      "zlib:shared",
+      "False"
+     ]
+    ],
+    "root": {
+     "name": null,
+     "version": null,
+     "user": null,
+     "channel": null
+    }
+}
