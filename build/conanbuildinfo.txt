@@ -38,18 +38,18 @@
 /root/.conan/data/zlib/1.2.11/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/
 
 [libs]
-PocoNetSSL
 PocoZip
-PocoMongoDB
-PocoUtil
-PocoDataSQLite
+PocoNetSSL
 PocoRedis
-PocoXML
-PocoData
+PocoUtil
+PocoMongoDB
+PocoDataSQLite
 PocoEncodings
-PocoJSON
-PocoNet
+PocoXML
 PocoCrypto
+PocoNet
+PocoJSON
+PocoData
 PocoFoundation
 pcreposix
 pcre
@@ -113,18 +113,18 @@ POCO_STATIC=ON
 /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/
 
 [libs_poco]
-PocoNetSSL
 PocoZip
-PocoMongoDB
-PocoUtil
-PocoDataSQLite
+PocoNetSSL
 PocoRedis
-PocoXML
-PocoData
+PocoUtil
+PocoMongoDB
+PocoDataSQLite
 PocoEncodings
-PocoJSON
-PocoNet
+PocoXML
 PocoCrypto
+PocoNet
+PocoJSON
+PocoData
 PocoFoundation
 
 [system_libs_poco]

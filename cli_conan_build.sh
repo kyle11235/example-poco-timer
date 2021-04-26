@@ -1,5 +1,5 @@
 BUILD_NAME=cli-conan-build
-BUILD_NUMBER=1
+BUILD_NUMBER=2
 
 rm -rf build
 mkdir build
@@ -20,3 +20,7 @@ cmake --build .
 jfrog rt bad $BUILD_NAME $BUILD_NUMBER "conanbuildinfo.txt"
 jfrog rt u "bin/md5" generic-local/tmp/ --build-name=$BUILD_NAME --build-number=$BUILD_NUMBER
 jfrog rt bp $BUILD_NAME $BUILD_NUMBER
+
+
+# 5. show graph
+conan info .. --graph=file.html
