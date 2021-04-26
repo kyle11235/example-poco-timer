@@ -16,10 +16,7 @@ conan install .. --build missing
 cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 
-# 4. upload a lib
-# cp -r ~/.conan/data/zlib .
-# conan upload zlib/1.2.11@conan/stable -r demo-conan-local --all
-
-# 5. publish build info
-jfrog rt bad $BUILD_NAME $BUILD_NUMBER "../conanbuildinfo.txt"
+# 4. upload & publish build info
+jfrog rt bad $BUILD_NAME $BUILD_NUMBER "conanbuildinfo.txt"
+jfrog rt u "bin/md5" generic-local/tmp/ --build-name=$BUILD_NAME --build-number=$BUILD_NUMBER
 jfrog rt bp $BUILD_NAME $BUILD_NUMBER
