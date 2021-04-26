@@ -16,7 +16,7 @@ conan install .. --build missing
 cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 
-$ 4. create dependency graph
+# 4. create dependency graph
 conan info .. --graph=dependency_graph.html
 
 # 5. upload & publish build info
