@@ -19,10 +19,11 @@ cmake --build .
 # 4. create dependency graph
 conan info .. --graph=dependency_graph.html
 
-# 5. upload & publish build info
+# 5. upload
 jfrog rt u "bin/md5" generic-local/tmp/ --build-name=$BUILD_NAME --build-number=$BUILD_NUMBER
 jfrog rt u "conaninfo.txt" generic-local/tmp/ --build-name=$BUILD_NAME --build-number=$BUILD_NUMBER
 jfrog rt u "dependency_graph.html" generic-local/tmp/ --build-name=$BUILD_NAME --build-number=$BUILD_NUMBER
 
+# 6. publish build info
 jfrog rt bad $BUILD_NAME $BUILD_NUMBER "conanbuildinfo.txt"
 jfrog rt bp $BUILD_NAME $BUILD_NUMBER
