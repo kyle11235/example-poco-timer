@@ -42,14 +42,14 @@ PocoZip
 PocoNetSSL
 PocoRedis
 PocoUtil
-PocoMongoDB
 PocoDataSQLite
-PocoEncodings
+PocoMongoDB
 PocoXML
+PocoData
+PocoJSON
+PocoEncodings
 PocoCrypto
 PocoNet
-PocoJSON
-PocoData
 PocoFoundation
 pcreposix
 pcre
@@ -117,14 +117,14 @@ PocoZip
 PocoNetSSL
 PocoRedis
 PocoUtil
-PocoMongoDB
 PocoDataSQLite
-PocoEncodings
+PocoMongoDB
 PocoXML
+PocoData
+PocoJSON
+PocoEncodings
 PocoCrypto
 PocoNet
-PocoJSON
-PocoData
 PocoFoundation
 
 [system_libs_poco]

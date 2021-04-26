@@ -1,5 +1,5 @@
 BUILD_NAME=cli-conan-build
-BUILD_NUMBER=2
+BUILD_NUMBER=7
 
 rm -rf build
 mkdir build
@@ -16,11 +16,13 @@ conan install .. --build missing
 cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 
-# 4. upload & publish build info
-jfrog rt bad $BUILD_NAME $BUILD_NUMBER "conanbuildinfo.txt"
+$ 4. create dependency graph
+conan info .. --graph=dependency_graph.html
+
+# 5. upload & publish build info
 jfrog rt u "bin/md5" generic-local/tmp/ --build-name=$BUILD_NAME --build-number=$BUILD_NUMBER
+jfrog rt u "conaninfo.txt" generic-local/tmp/ --build-name=$BUILD_NAME --build-number=$BUILD_NUMBER
+jfrog rt u "dependency_graph.html" generic-local/tmp/ --build-name=$BUILD_NAME --build-number=$BUILD_NUMBER
+
+jfrog rt bad $BUILD_NAME $BUILD_NUMBER "conanbuildinfo.txt"
 jfrog rt bp $BUILD_NAME $BUILD_NUMBER
-
-
-# 5. show graph
-conan info .. --graph=file.html
