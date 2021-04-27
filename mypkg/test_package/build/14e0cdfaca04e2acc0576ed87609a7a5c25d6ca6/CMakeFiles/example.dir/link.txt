@@ -1,0 +1,1 @@
+/usr/bin/g++   -m64 -O3 -DNDEBUG  -rdynamic CMakeFiles/example.dir/example.cpp.o -o bin/example   -L/root/.conan/data/hello/0.1/demo/testing/package/e5ac722d270cf7c45ba6c1301f2e878770b1eea3/lib  -Wl,-rpath,/root/.conan/data/hello/0.1/demo/testing/package/e5ac722d270cf7c45ba6c1301f2e878770b1eea3/lib -lhello 
