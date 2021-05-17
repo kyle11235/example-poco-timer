@@ -1,0 +1,1815 @@
++ rm -rf build
++ mkdir build
++ pushd build
+~/kyle/conan-example/build ~/kyle/conan-example
++ conan install .. --build=missing
+Configuration:
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=4.8
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+zlib/1.2.11: WARN: The package zlib/1.2.11:3a5f72c8cd50641b8efa6ed13e6914c6ced2747c doesn't belong to the installed recipe revision, removing folder
+poco/1.9.4: WARN: Package binary is corrupted, removing: b5718fd22dd3e307da5d809a5c1515a40651977b
+conanfile.txt: Installing package
+Requirements
+    bzip2/1.0.8 from 'conan-center' - Cache
+    expat/2.2.10 from 'conan-center' - Cache
+    openssl/1.1.1i from 'conan-center' - Cache
+    pcre/8.44 from 'conan-center' - Cache
+    poco/1.9.4 from 'conan-center' - Cache
+    sqlite3/3.34.0 from 'conan-center' - Cache
+    zlib/1.2.11 from 'conan-center' - Cache
+Packages
+    bzip2/1.0.8:9060f665b3af45e4f562113d4ba55aeee0451e61 - Cache
+    expat/2.2.10:3a5f72c8cd50641b8efa6ed13e6914c6ced2747c - Cache
+    openssl/1.1.1i:3a5f72c8cd50641b8efa6ed13e6914c6ced2747c - Cache
+    pcre/8.44:d120d770f0b1c75db2737b297be4bdf9ab11749e - Cache
+    poco/1.9.4:b5718fd22dd3e307da5d809a5c1515a40651977b - Build
+    sqlite3/3.34.0:c37955af6012bf587bd96c7aacc54308220abe25 - Cache
+    zlib/1.2.11:3a5f72c8cd50641b8efa6ed13e6914c6ced2747c - Build
+
+Installing (downloading, building) binaries...
+bzip2/1.0.8: Already installed!
+bzip2/1.0.8: Appending PATH environment variable: /root/.conan/data/bzip2/1.0.8/_/_/package/9060f665b3af45e4f562113d4ba55aeee0451e61/bin
+expat/2.2.10: Already installed!
+openssl/1.1.1i: Already installed!
+sqlite3/3.34.0: Already installed!
+sqlite3/3.34.0: Appending PATH env var with : /root/.conan/data/sqlite3/3.34.0/_/_/package/c37955af6012bf587bd96c7aacc54308220abe25/bin
+zlib/1.2.11: Copying sources to build folder
+zlib/1.2.11: Building your package in /root/.conan/data/zlib/1.2.11/_/_/build/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c
+zlib/1.2.11: Generator cmake created conanbuildinfo.cmake
+zlib/1.2.11: Calling build()
+-- The C compiler identification is GNU 4.8.5
+-- The CXX compiler identification is GNU 4.8.5
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan CMake Wrapper
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Adjusting fPIC flag (ON)
+-- Conan: Checking correct version: 4.8
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of off64_t
+-- Check size of off64_t - done
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Renaming
+--     /root/.conan/data/zlib/1.2.11/_/_/build/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/source_subfolder/zconf.h
+-- to 'zconf.h.included' because this file is included with zlib
+-- but CMake generates it automatically in the build directory.
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/.conan/data/zlib/1.2.11/_/_/build/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/build_subfolder
+[  6%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/compress.o
+[ 18%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/adler32.o
+[ 18%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/crc32.o
+[ 25%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/deflate.o
+[ 31%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/gzclose.o
+[ 37%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/gzlib.o
+[ 43%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/gzread.o
+[ 50%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/gzwrite.o
+[ 56%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/inflate.o
+[ 62%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/infback.o
+[ 68%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/inftrees.o
+[ 75%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/inffast.o
+[ 81%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/trees.o
+[ 87%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/uncompr.o
+[ 93%] Building C object source_subfolder/CMakeFiles/zlibstatic.dir/zutil.o
+[100%] Linking C static library ../lib/libz.a
+[100%] Built target zlibstatic
+zlib/1.2.11: Package '3a5f72c8cd50641b8efa6ed13e6914c6ced2747c' built
+zlib/1.2.11: Build folder /root/.conan/data/zlib/1.2.11/_/_/build/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c
+zlib/1.2.11: Generated conaninfo.txt
+zlib/1.2.11: Generated conanbuildinfo.txt
+zlib/1.2.11: Generating the package
+zlib/1.2.11: Package folder /root/.conan/data/zlib/1.2.11/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c
+zlib/1.2.11: Calling package()
+zlib/1.2.11 package(): Packaged 1 file: LICENSE
+zlib/1.2.11 package(): Packaged 2 '.h' files: zconf.h, zlib.h
+zlib/1.2.11 package(): Packaged 1 '.a' file: libz.a
+zlib/1.2.11: Package '3a5f72c8cd50641b8efa6ed13e6914c6ced2747c' created
+zlib/1.2.11: Created package revision e2de9fe27eaaa065c72d99cd4366c416
+pcre/8.44: Already installed!
+pcre/8.44: Appending PATH environment variable: /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/bin
+poco/1.9.4: WARN: Build folder is dirty, removing it: /root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b
+poco/1.9.4: WARN: Trying to remove corrupted source folder
+poco/1.9.4: WARN: This can take a while for big packages
+poco/1.9.4: Configuring sources in /root/.conan/data/poco/1.9.4/_/_/source
+Downloading poco-1.9.4-release.tar.gz completed [10077.62k]                              
+
+poco/1.9.4: Copying sources to build folder
+poco/1.9.4: Building your package in /root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b
+poco/1.9.4: Generator cmake created conanbuildinfo.cmake
+poco/1.9.4: Generator cmake_find_package created FindPCRE.cmake
+poco/1.9.4: Generator cmake_find_package created FindEXPAT.cmake
+poco/1.9.4: Generator cmake_find_package created FindSQLite3.cmake
+poco/1.9.4: Generator cmake_find_package created FindOpenSSL.cmake
+poco/1.9.4: Generator cmake_find_package created FindBZip2.cmake
+poco/1.9.4: Generator cmake_find_package created FindZLIB.cmake
+poco/1.9.4: Calling build()
+poco/1.9.4: OrderedDict([('CMAKE_BUILD_TYPE', 'Release'), ('CONAN_IN_LOCAL_CACHE', 'ON'), ('CONAN_COMPILER', 'gcc'), ('CONAN_COMPILER_VERSION', '4.8'), ('CONAN_CXX_FLAGS', '-m64'), ('CONAN_SHARED_LINKER_FLAGS', '-m64'), ('CONAN_C_FLAGS', '-m64'), ('CONAN_LIBCXX', 'libstdc++'), ('BUILD_SHARED_LIBS', 'OFF'), ('CMAKE_INSTALL_PREFIX', '/root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b'), ('CMAKE_INSTALL_BINDIR', 'bin'), ('CMAKE_INSTALL_SBINDIR', 'bin'), ('CMAKE_INSTALL_LIBEXECDIR', 'bin'), ('CMAKE_INSTALL_LIBDIR', 'lib'), ('CMAKE_INSTALL_INCLUDEDIR', 'include'), ('CMAKE_INSTALL_OLDINCLUDEDIR', 'include'), ('CMAKE_INSTALL_DATAROOTDIR', 'share'), ('CONAN_CMAKE_POSITION_INDEPENDENT_CODE', 'ON'), ('CMAKE_MODULE_PATH', '/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b'), ('CMAKE_EXPORT_NO_PACKAGE_REGISTRY', 'ON'), ('CONAN_EXPORTED', '1'), ('POCO_STATIC', True), ('ENABLE_APACHECONNECTOR', <conans.model.options.PackageOption object at 0x7f3695e32e48>), ('ENABLE_CPPPARSER', <conans.model.options.PackageOption object at 0x7f3695e32dd8>), ('ENABLE_CRYPTO', <conans.model.options.PackageOption object at 0x7f3695e32f60>), ('ENABLE_DATA', <conans.model.options.PackageOption object at 0x7f3695e32f28>), ('ENABLE_DATA_MYSQL', False), ('ENABLE_DATA_ODBC', <conans.model.options.PackageOption object at 0x7f3695e32f98>), ('ENABLE_DATA_POSTGRESQL', False), ('ENABLE_DATA_SQLITE', <conans.model.options.PackageOption object at 0x7f3695e2e080>), ('ENABLE_ENCODINGS', <conans.model.options.PackageOption object at 0x7f3695e2e048>), ('ENABLE_JSON', <conans.model.options.PackageOption object at 0x7f3695e2e160>), ('ENABLE_JWT', False), ('ENABLE_MONGODB', <conans.model.options.PackageOption object at 0x7f3695e2e3c8>), ('ENABLE_NET', <conans.model.options.PackageOption object at 0x7f3695e2e2e8>), ('ENABLE_NETSSL', <conans.model.options.PackageOption object at 0x7f3695e2e240>), ('ENABLE_NETSSL_WIN', False), ('ENABLE_PDF', <conans.model.options.PackageOption object at 0x7f3695e2e390>), ('ENABLE_PAGECOMPILER', <conans.model.options.PackageOption object at 0x7f3695e2e278>), ('ENABLE_PAGECOMPILER_FILE2PAGE', <conans.model.options.PackageOption object at 0x7f3695e2e208>), ('ENABLE_POCODOC', <conans.model.options.PackageOption object at 0x7f3695e2e0f0>), ('ENABLE_REDIS', <conans.model.options.PackageOption object at 0x7f3695e2e470>), ('ENABLE_SEVENZIP', <conans.model.options.PackageOption object at 0x7f3695e2e400>), ('ENABLE_UTIL', <conans.model.options.PackageOption object at 0x7f3695e2e518>), ('ENABLE_XML', <conans.model.options.PackageOption object at 0x7f3695e2e1d0>), ('ENABLE_ZIP', <conans.model.options.PackageOption object at 0x7f3695e2e630>), ('POCO_UNBUNDLED', True), ('CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP', True)])
+-- The C compiler identification is GNU 4.8.5
+-- The CXX compiler identification is GNU 4.8.5
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Adjusting fPIC flag (ON)
+-- Conan: Checking correct version: 4.8
+-- Conan: C++ stdlib: libstdc++
+-- Poco package version: 1.9.4
+-- Checking for C++11 compiler
+-- Checking for C++11 compiler - available
+-- Checking for C++14 compiler
+-- Checking for C++14 compiler - unavailable
+-- Setting Poco build type - Release
+-- Building static libraries
+-- Building without tests & samples
+-- Using external sqlite, zlib, pcre, expat, ...
+-- Conan: Using autogenerated FindPCRE.cmake
+-- Found PCRE: 8.44 (found version "8.44") 
+-- Library pcreposix found /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcreposix.a
+-- Found: /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcreposix.a
+-- Library pcre found /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre.a
+-- Found: /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre.a
+-- Library pcre16 found /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre16.a
+-- Found: /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre16.a
+-- Library pcre32 found /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre32.a
+-- Found: /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre32.a
+-- Conan: Using autogenerated FindBZip2.cmake
+-- Found BZip2: 1.0.8 (found version "1.0.8") 
+-- Library bz2 found /root/.conan/data/bzip2/1.0.8/_/_/package/9060f665b3af45e4f562113d4ba55aeee0451e61/lib/libbz2.a
+-- Found: /root/.conan/data/bzip2/1.0.8/_/_/package/9060f665b3af45e4f562113d4ba55aeee0451e61/lib/libbz2.a
+-- Conan: Using autogenerated FindZLIB.cmake
+-- Found ZLIB: 1.2.11 (found version "1.2.11") 
+-- Library z found /root/.conan/data/zlib/1.2.11/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libz.a
+-- Found: /root/.conan/data/zlib/1.2.11/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libz.a
+-- Library pcre32 found /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre32.a
+-- Found: /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre32.a
+-- Library pcre16 found /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre16.a
+-- Found: /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre16.a
+-- Library pcre found /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre.a
+-- Found: /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcre.a
+-- Library pcreposix found /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcreposix.a
+-- Found: /root/.conan/data/pcre/8.44/_/_/package/d120d770f0b1c75db2737b297be4bdf9ab11749e/lib/libpcreposix.a
+-- Conan: Using autogenerated FindZLIB.cmake
+-- Library z found /root/.conan/data/zlib/1.2.11/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libz.a
+-- Skipping already existing target: CONAN_LIB::ZLIB_z
+-- Found: /root/.conan/data/zlib/1.2.11/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libz.a
+-- Looking for pthread_setaffinity_np in pthread
+-- Looking for pthread_setaffinity_np in pthread - found
+-- Performing Test HAVE_THREE_PARAM_SCHED_SETAFFINITY
+-- Performing Test HAVE_THREE_PARAM_SCHED_SETAFFINITY - Success
+-- Platform has THREE PARAM at PTHREAD_SETAFFINITY_NP
+-- Conan: Using autogenerated FindEXPAT.cmake
+-- Found EXPAT: 2.2.10 (found version "2.2.10") 
+-- Library expat found /root/.conan/data/expat/2.2.10/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libexpat.a
+-- Found: /root/.conan/data/expat/2.2.10/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libexpat.a
+-- Conan: Using autogenerated FindOpenSSL.cmake
+-- Found OpenSSL: 1.1.1i (found version "1.1.1i") 
+-- Library ssl found /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libssl.a
+-- Found: /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libssl.a
+-- Library crypto found /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libcrypto.a
+-- Found: /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libcrypto.a
+-- Library crypto found /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libcrypto.a
+-- Found: /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libcrypto.a
+-- Library ssl found /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libssl.a
+-- Found: /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/lib/libssl.a
+-- Conan: Using autogenerated FindSQLite3.cmake
+-- Found SQLite3: 3.34.0 (found version "3.34.0") 
+-- Library sqlite3 found /root/.conan/data/sqlite3/3.34.0/_/_/package/c37955af6012bf587bd96c7aacc54308220abe25/lib/libsqlite3.a
+-- Found: /root/.conan/data/sqlite3/3.34.0/_/_/package/c37955af6012bf587bd96c7aacc54308220abe25/lib/libsqlite3.a
+-- Library sqlite3 found /root/.conan/data/sqlite3/3.34.0/_/_/package/c37955af6012bf587bd96c7aacc54308220abe25/lib/libsqlite3.a
+-- Found: /root/.conan/data/sqlite3/3.34.0/_/_/package/c37955af6012bf587bd96c7aacc54308220abe25/lib/libsqlite3.a
+-- CMake 3.20.1 successfully configured Poco using Unix Makefiles generator
+-- Installation target path: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b
+-- C_FLAGS:  =  -m64
+-- CMAKE_C_FLAGS_DEBUG:=-g    -D_DEBUG
+-- CMAKE_C_FLAGS_RELEASE:=-O3 -DNDEBUG 
+-- CMAKE_C_FLAGS_MINSIZEREL:=-Os -DNDEBUG
+-- CMAKE_C_FLAGS_RELWITHDEBINFO:=-O2 -g -DNDEBUG
+-- 
+-- 
+-- CXX_FLAGS:=  -m64
+-- CMAKE_CXX_FLAGS_DEBUG:=-g  -D_DEBUG
+-- CMAKE_CXX_FLAGS_RELEASE:=-O3 -DNDEBUG 
+-- CMAKE_CXX_FLAGS_MINSIZEREL:=-Os -DNDEBUG
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO:=-O2 -g -DNDEBUG
+-- Building: Encodings
+-- Building: XML
+-- Building: JSON
+-- Building: Util
+-- Building: Net
+-- Building: MongoDB
+-- Building: Redis
+-- Building: NetSSL_OpenSSL
+-- Building: Crypto
+-- Building: Data
+-- Building: Zip
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+    CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP
+    ENABLE_DATA_POSTGRESQL
+    ENABLE_JWT
+
+
+-- Build files have been written to: /root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/build_subfolder
+[  0%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/ASCIIEncoding.cpp.o
+[  0%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/ActiveDispatcher.cpp.o
+[  0%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/ArchiveStrategy.cpp.o
+[  0%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/AbstractObserver.cpp.o
+[  1%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Ascii.cpp.o
+[  1%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/AsyncChannel.cpp.o
+[  1%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/AtomicCounter.cpp.o
+[  1%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Base32Decoder.cpp.o
+[  1%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Base32Encoder.cpp.o
+[  1%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Base64Decoder.cpp.o
+[  2%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Base64Encoder.cpp.o
+[  2%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/BinaryReader.cpp.o
+[  2%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/BinaryWriter.cpp.o
+[  2%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Bugcheck.cpp.o
+[  2%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/ByteOrder.cpp.o
+[  3%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Channel.cpp.o
+[  3%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Checksum.cpp.o
+[  3%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Clock.cpp.o
+[  3%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Condition.cpp.o
+[  3%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Configurable.cpp.o
+[  3%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/ConsoleChannel.cpp.o
+[  4%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/CountingStream.cpp.o
+[  4%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DateTime.cpp.o
+[  4%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DateTimeFormat.cpp.o
+[  4%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DateTimeFormatter.cpp.o
+[  4%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DateTimeParser.cpp.o
+[  5%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Debugger.cpp.o
+[  5%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DeflatingStream.cpp.o
+[  5%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DigestEngine.cpp.o
+[  5%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DigestStream.cpp.o
+[  5%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DirectoryIterator.cpp.o
+[  5%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DirectoryIteratorStrategy.cpp.o
+[  6%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/DirectoryWatcher.cpp.o
+[  6%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Environment.cpp.o
+[  6%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Error.cpp.o
+[  6%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/ErrorHandler.cpp.o
+[  6%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Event.cpp.o
+[  7%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/EventArgs.cpp.o
+[  7%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/EventChannel.cpp.o
+[  7%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Exception.cpp.o
+[  7%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/FIFOBufferStream.cpp.o
+[  7%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/FPEnvironment.cpp.o
+[  8%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/File.cpp.o
+[  8%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/FileChannel.cpp.o
+[  8%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/FileStream.cpp.o
+[  8%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/FileStreamFactory.cpp.o
+[  8%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Format.cpp.o
+[  8%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Formatter.cpp.o
+[  9%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/FormattingChannel.cpp.o
+[  9%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Glob.cpp.o
+[  9%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Hash.cpp.o
+[  9%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/HashStatistic.cpp.o
+[  9%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/HexBinaryDecoder.cpp.o
+[ 10%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/HexBinaryEncoder.cpp.o
+[ 10%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/InflatingStream.cpp.o
+[ 10%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/JSONString.cpp.o
+[ 10%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Latin1Encoding.cpp.o
+[ 10%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Latin2Encoding.cpp.o
+[ 10%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Latin9Encoding.cpp.o
+[ 11%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/LineEndingConverter.cpp.o
+[ 11%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/LocalDateTime.cpp.o
+[ 11%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/LogFile.cpp.o
+[ 11%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/LogStream.cpp.o
+[ 11%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Logger.cpp.o
+[ 12%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/LoggingFactory.cpp.o
+[ 12%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/LoggingRegistry.cpp.o
+[ 12%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/MD4Engine.cpp.o
+[ 12%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/MD5Engine.cpp.o
+[ 12%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Manifest.cpp.o
+[ 12%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/MemoryPool.cpp.o
+[ 13%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/MemoryStream.cpp.o
+[ 13%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Message.cpp.o
+[ 13%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Mutex.cpp.o
+[ 13%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NamedEvent.cpp.o
+[ 13%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NamedMutex.cpp.o
+[ 14%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NestedDiagnosticContext.cpp.o
+[ 14%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Notification.cpp.o
+[ 14%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NotificationCenter.cpp.o
+[ 14%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NotificationQueue.cpp.o
+[ 14%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NullChannel.cpp.o
+[ 14%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NullStream.cpp.o
+[ 15%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NumberFormatter.cpp.o
+[ 15%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NumberParser.cpp.o
+[ 15%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/NumericString.cpp.o
+[ 15%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Path.cpp.o
+[ 15%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/PatternFormatter.cpp.o
+[ 16%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Pipe.cpp.o
+[ 16%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/PipeImpl.cpp.o
+[ 16%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/PipeStream.cpp.o
+[ 16%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/PriorityNotificationQueue.cpp.o
+[ 16%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Process.cpp.o
+[ 16%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/PurgeStrategy.cpp.o
+[ 17%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/RWLock.cpp.o
+[ 17%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Random.cpp.o
+[ 17%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/RandomStream.cpp.o
+[ 17%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/RefCountedObject.cpp.o
+[ 17%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/RegularExpression.cpp.o
+[ 18%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/RotateStrategy.cpp.o
+[ 18%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Runnable.cpp.o
+[ 18%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/SHA1Engine.cpp.o
+[ 18%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Semaphore.cpp.o
+[ 18%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/SharedLibrary.cpp.o
+[ 18%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/SharedMemory.cpp.o
+[ 19%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/SignalHandler.cpp.o
+[ 19%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/SimpleFileChannel.cpp.o
+[ 19%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/SortedDirectoryIterator.cpp.o
+[ 19%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/SplitterChannel.cpp.o
+[ 19%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Stopwatch.cpp.o
+[ 20%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/StreamChannel.cpp.o
+[ 20%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/StreamConverter.cpp.o
+[ 20%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/StreamCopier.cpp.o
+[ 20%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/StreamTokenizer.cpp.o
+[ 20%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/String.cpp.o
+[ 20%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/StringTokenizer.cpp.o
+[ 21%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/SynchronizedObject.cpp.o
+[ 21%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/SyslogChannel.cpp.o
+[ 21%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Task.cpp.o
+[ 21%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/TaskManager.cpp.o
+[ 21%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/TaskNotification.cpp.o
+[ 22%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/TeeStream.cpp.o
+[ 22%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/TemporaryFile.cpp.o
+[ 22%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/TextBufferIterator.cpp.o
+[ 22%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/TextConverter.cpp.o
+[ 22%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/TextEncoding.cpp.o
+[ 22%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/TextIterator.cpp.o
+[ 23%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Thread.cpp.o
+[ 23%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/ThreadLocal.cpp.o
+[ 23%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/ThreadPool.cpp.o
+[ 23%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/ThreadTarget.cpp.o
+[ 23%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/TimedNotificationQueue.cpp.o
+[ 24%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Timer.cpp.o
+[ 24%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Timespan.cpp.o
+[ 24%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Timestamp.cpp.o
+[ 24%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Timezone.cpp.o
+[ 24%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Token.cpp.o
+[ 24%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/URI.cpp.o
+[ 25%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/URIStreamFactory.cpp.o
+[ 25%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/URIStreamOpener.cpp.o
+[ 25%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/UTF16Encoding.cpp.o
+[ 25%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/UTF32Encoding.cpp.o
+[ 25%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/UTF8Encoding.cpp.o
+[ 26%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/UTF8String.cpp.o
+[ 26%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/UUID.cpp.o
+[ 26%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/UUIDGenerator.cpp.o
+[ 26%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Unicode.cpp.o
+[ 26%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/UnicodeConverter.cpp.o
+[ 26%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Var.cpp.o
+[ 27%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/VarHolder.cpp.o
+[ 27%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/VarIterator.cpp.o
+[ 27%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Void.cpp.o
+[ 27%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Windows1250Encoding.cpp.o
+[ 27%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Windows1251Encoding.cpp.o
+[ 28%] Building CXX object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/Windows1252Encoding.cpp.o
+[ 28%] Building C object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/pcre_ucd.c.o
+[ 28%] Building C object source_subfolder/Foundation/CMakeFiles/Foundation.dir/src/pcre_tables.c.o
+[ 28%] Linking CXX static library ../../lib/libPocoFoundation.a
+[ 28%] Built target Foundation
+[ 28%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/DoubleByteEncoding.cpp.o
+[ 28%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/Array.cpp.o
+[ 28%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/AbstractContainerNode.cpp.o
+[ 28%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/AbstractHTTPRequestHandler.cpp.o
+[ 28%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Encodings.cpp.o
+[ 29%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/AbstractNode.cpp.o
+[ 29%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/DNS.cpp.o
+[ 29%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_10Encoding.cpp.o
+[ 29%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Attr.cpp.o
+[ 30%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_11Encoding.cpp.o
+[ 30%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/AttrMap.cpp.o
+[ 30%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/DatagramSocket.cpp.o
+[ 30%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_13Encoding.cpp.o
+[ 30%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Attributes.cpp.o
+[ 30%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/AttributesImpl.cpp.o
+[ 30%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/Handler.cpp.o
+[ 30%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_14Encoding.cpp.o
+[ 30%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/DatagramSocketImpl.cpp.o
+[ 30%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_16Encoding.cpp.o
+[ 31%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/DialogSocket.cpp.o
+[ 31%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/CDATASection.cpp.o
+[ 31%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_3Encoding.cpp.o
+[ 32%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/CharacterData.cpp.o
+[ 33%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/JSONException.cpp.o
+[ 34%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_4Encoding.cpp.o
+[ 34%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/FTPClientSession.cpp.o
+[ 34%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/Object.cpp.o
+[ 34%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/ChildNodesList.cpp.o
+[ 34%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_5Encoding.cpp.o
+[ 34%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Comment.cpp.o
+[ 34%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_6Encoding.cpp.o
+[ 34%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/ContentHandler.cpp.o
+[ 34%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DOMBuilder.cpp.o
+[ 34%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_7Encoding.cpp.o
+[ 34%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/FTPStreamFactory.cpp.o
+[ 34%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_8Encoding.cpp.o
+[ 35%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DOMException.cpp.o
+[ 35%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DOMImplementation.cpp.o
+[ 35%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/ISO8859_9Encoding.cpp.o
+[ 35%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/FilePartSource.cpp.o
+[ 36%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows1253Encoding.cpp.o
+[ 36%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DOMObject.cpp.o
+[ 36%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTMLForm.cpp.o
+[ 36%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DOMParser.cpp.o
+[ 36%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/ParseHandler.cpp.o
+[ 36%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows1254Encoding.cpp.o
+[ 36%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DOMSerializer.cpp.o
+[ 36%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows1255Encoding.cpp.o
+[ 37%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPAuthenticationParams.cpp.o
+[ 37%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows1256Encoding.cpp.o
+[ 37%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DOMWriter.cpp.o
+[ 37%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows1257Encoding.cpp.o
+[ 37%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPBasicCredentials.cpp.o
+[ 38%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DTDHandler.cpp.o
+[ 39%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows1258Encoding.cpp.o
+[ 39%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DTDMap.cpp.o
+[ 39%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows874Encoding.cpp.o
+[ 39%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DeclHandler.cpp.o
+[ 39%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPBufferAllocator.cpp.o
+[ 39%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DefaultHandler.cpp.o
+[ 39%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPChunkedStream.cpp.o
+[ 39%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows932Encoding.cpp.o
+[ 39%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Document.cpp.o
+[ 39%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/Parser.cpp.o
+[ 40%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DocumentEvent.cpp.o
+[ 40%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows936Encoding.cpp.o
+[ 40%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DocumentFragment.cpp.o
+[ 40%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPClientSession.cpp.o
+[ 40%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/DocumentType.cpp.o
+[ 40%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Element.cpp.o
+[ 40%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows949Encoding.cpp.o
+[ 40%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/ParserImpl.cpp.o
+[ 40%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/ElementsByTagNameList.cpp.o
+[ 40%] Building CXX object source_subfolder/Encodings/CMakeFiles/Encodings.dir/src/Windows950Encoding.cpp.o
+[ 40%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPCookie.cpp.o
+[ 40%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Entity.cpp.o
+[ 41%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/EntityReference.cpp.o
+[ 41%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/EntityResolver.cpp.o
+[ 42%] Linking CXX static library ../../lib/libPocoEncodings.a
+[ 42%] Built target Encodings
+[ 42%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/Cipher.cpp.o
+[ 43%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPCredentials.cpp.o
+[ 43%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/EntityResolverImpl.cpp.o
+[ 43%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/ErrorHandler.cpp.o
+[ 44%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/PrintHandler.cpp.o
+[ 44%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Event.cpp.o
+[ 44%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/CipherFactory.cpp.o
+[ 44%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPDigestCredentials.cpp.o
+[ 45%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/EventDispatcher.cpp.o
+[ 45%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/EventException.cpp.o
+[ 45%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/EventListener.cpp.o
+[ 45%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/EventTarget.cpp.o
+[ 45%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/CipherImpl.cpp.o
+[ 45%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/InputSource.cpp.o
+[ 45%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPFixedLengthStream.cpp.o
+[ 45%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/Query.cpp.o
+[ 45%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/LexicalHandler.cpp.o
+[ 46%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Locator.cpp.o
+[ 46%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/CipherKey.cpp.o
+[ 46%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/LocatorImpl.cpp.o
+[ 46%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/MutationEvent.cpp.o
+[ 46%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPHeaderStream.cpp.o
+[ 46%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/CipherKeyImpl.cpp.o
+[ 46%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Name.cpp.o
+[ 46%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/NamePool.cpp.o
+[ 46%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPIOStream.cpp.o
+[ 47%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/CryptoException.cpp.o
+[ 48%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/NamedNodeMap.cpp.o
+[ 48%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/NamespaceStrategy.cpp.o
+[ 48%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/Stringifier.cpp.o
+[ 48%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/CryptoStream.cpp.o
+[ 49%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPMessage.cpp.o
+[ 49%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/NamespaceSupport.cpp.o
+[ 49%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/CryptoTransform.cpp.o
+[ 49%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPRequest.cpp.o
+[ 49%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Node.cpp.o
+[ 49%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/DigestEngine.cpp.o
+[ 49%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/NodeAppender.cpp.o
+[ 49%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/ECDSADigestEngine.cpp.o
+[ 49%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/NodeFilter.cpp.o
+[ 49%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/Template.cpp.o
+[ 50%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/NodeIterator.cpp.o
+[ 50%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPRequestHandler.cpp.o
+[ 50%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPRequestHandlerFactory.cpp.o
+[ 50%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/NodeList.cpp.o
+[ 51%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/ECKey.cpp.o
+[ 51%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Notation.cpp.o
+[ 51%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/ParserEngine.cpp.o
+[ 51%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPResponse.cpp.o
+[ 51%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/ECKeyImpl.cpp.o
+[ 51%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPServer.cpp.o
+[ 51%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/ProcessingInstruction.cpp.o
+[ 52%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/QName.cpp.o
+[ 52%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/EVPPKey.cpp.o
+[ 52%] Building CXX object source_subfolder/JSON/CMakeFiles/JSON.dir/src/TemplateCache.cpp.o
+[ 53%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPServerConnection.cpp.o
+[ 53%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/SAXException.cpp.o
+[ 53%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/SAXParser.cpp.o
+[ 53%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/KeyPair.cpp.o
+[ 53%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPServerConnectionFactory.cpp.o
+[ 53%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/Text.cpp.o
+[ 53%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/KeyPairImpl.cpp.o
+[ 53%] Building C object source_subfolder/JSON/CMakeFiles/JSON.dir/src/pdjson.c.o
+[ 53%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/TreeWalker.cpp.o
+[ 53%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/OpenSSLInitializer.cpp.o
+[ 53%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPServerParams.cpp.o
+[ 54%] Linking CXX static library ../../lib/libPocoJSON.a
+[ 54%] Built target JSON
+[ 54%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/AbstractBinder.cpp.o
+[ 54%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/ValueTraits.cpp.o
+[ 54%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPServerRequest.cpp.o
+[ 55%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/WhitespaceFilter.cpp.o
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/Crypto/src/OpenSSLInitializer.cpp: In static member function ‘static void Poco::Crypto::OpenSSLInitializer::initialize()’:
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/Crypto/src/OpenSSLInitializer.cpp:89:3: warning: ‘void OPENSSL_config(const char*)’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/conf.h:91) [-Wdeprecated-declarations]
+   OPENSSL_config(NULL);
+   ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/Crypto/src/OpenSSLInitializer.cpp:89:22: warning: ‘void OPENSSL_config(const char*)’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/conf.h:91) [-Wdeprecated-declarations]
+   OPENSSL_config(NULL);
+                      ^
+[ 56%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/PKCS12Container.cpp.o
+[ 56%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/XMLException.cpp.o
+[ 56%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/XMLFilter.cpp.o
+[ 56%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPServerRequestImpl.cpp.o
+[ 56%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/XMLFilterImpl.cpp.o
+[ 56%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/XMLReader.cpp.o
+[ 57%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/XMLStreamParser.cpp.o
+[ 58%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPServerResponse.cpp.o
+[ 58%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/RSACipherImpl.cpp.o
+[ 58%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPServerResponseImpl.cpp.o
+[ 58%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/RSADigestEngine.cpp.o
+[ 58%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/AbstractBinding.cpp.o
+[ 58%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/XMLStreamParserException.cpp.o
+[ 58%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPServerSession.cpp.o
+[ 58%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/XMLString.cpp.o
+[ 58%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/RSAKey.cpp.o
+[ 58%] Building CXX object source_subfolder/XML/CMakeFiles/XML.dir/src/XMLWriter.cpp.o
+[ 58%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPSession.cpp.o
+[ 58%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/AbstractExtraction.cpp.o
+[ 58%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/RSAKeyImpl.cpp.o
+[ 58%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPSessionFactory.cpp.o
+[ 59%] Building CXX object source_subfolder/Crypto/CMakeFiles/Crypto.dir/src/X509Certificate.cpp.o
+[ 59%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/AbstractExtractor.cpp.o
+[ 59%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPSessionInstantiator.cpp.o
+[ 59%] Linking CXX static library ../../lib/libPocoXML.a
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/Crypto/src/X509Certificate.cpp: In member function ‘void Poco::Crypto::X509Certificate::extractNames(std::string&, std::set<std::basic_string<char> >&) const’:
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/Crypto/src/X509Certificate.cpp:258:48: warning: ‘unsigned char* ASN1_STRING_data(ASN1_STRING*)’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/asn1.h:554) [-Wdeprecated-declarations]
+     const char* data = reinterpret_cast<char*>(ASN1_STRING_data(name->d.ia5));
+                                                ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/Crypto/src/X509Certificate.cpp:258:76: warning: ‘unsigned char* ASN1_STRING_data(ASN1_STRING*)’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/asn1.h:554) [-Wdeprecated-declarations]
+     const char* data = reinterpret_cast<char*>(ASN1_STRING_data(name->d.ia5));
+                                                                            ^
+[ 59%] Built target XML
+[ 59%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/AbstractConfiguration.cpp.o
+[ 60%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPStream.cpp.o
+[ 60%] Linking CXX static library ../../lib/libPocoCrypto.a
+[ 60%] Built target Crypto
+[ 60%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HTTPStreamFactory.cpp.o
+[ 61%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/AbstractPreparation.cpp.o
+[ 61%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/HostEntry.cpp.o
+[ 61%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/ICMPClient.cpp.o
+[ 61%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/AbstractPreparator.cpp.o
+[ 61%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/ICMPEventArgs.cpp.o
+[ 61%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/Application.cpp.o
+[ 62%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/ICMPPacket.cpp.o
+[ 62%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/ICMPPacketImpl.cpp.o
+[ 62%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/ICMPSocket.cpp.o
+[ 62%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/ArchiveStrategy.cpp.o
+[ 62%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/ICMPSocketImpl.cpp.o
+[ 62%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/ICMPv4PacketImpl.cpp.o
+[ 62%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/IPAddress.cpp.o
+[ 63%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/ConfigurationMapper.cpp.o
+[ 64%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/IPAddressImpl.cpp.o
+[ 64%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/ConfigurationView.cpp.o
+[ 64%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/MailMessage.cpp.o
+[ 64%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/MailRecipient.cpp.o
+[ 64%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/FilesystemConfiguration.cpp.o
+[ 64%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Bulk.cpp.o
+[ 64%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Connector.cpp.o
+[ 64%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/MailStream.cpp.o
+[ 64%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/HelpFormatter.cpp.o
+[ 65%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/DataException.cpp.o
+[ 65%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/MediaType.cpp.o
+[ 66%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/MessageHeader.cpp.o
+[ 66%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/IniFileConfiguration.cpp.o
+[ 66%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Date.cpp.o
+[ 66%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/MulticastSocket.cpp.o
+[ 66%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/MultipartReader.cpp.o
+[ 66%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/MultipartWriter.cpp.o
+[ 67%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/IntValidator.cpp.o
+[ 67%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/DynamicLOB.cpp.o
+[ 67%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/NTPClient.cpp.o
+[ 67%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/JSONConfiguration.cpp.o
+[ 67%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/NTPEventArgs.cpp.o
+[ 68%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/NTPPacket.cpp.o
+[ 68%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/NameValueCollection.cpp.o
+[ 68%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/Net.cpp.o
+[ 68%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Limit.cpp.o
+[ 68%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/NetException.cpp.o
+[ 68%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/MetaColumn.cpp.o
+[ 68%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/PooledSessionHolder.cpp.o
+[ 68%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/NetworkInterface.cpp.o
+[ 69%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/PooledSessionImpl.cpp.o
+[ 69%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/LayeredConfiguration.cpp.o
+[ 69%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/LoggingConfigurator.cpp.o
+[ 69%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/LoggingSubsystem.cpp.o
+[ 70%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/NullPartHandler.cpp.o
+[ 70%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Position.cpp.o
+[ 70%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/MapConfiguration.cpp.o
+[ 70%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Range.cpp.o
+[ 71%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/Option.cpp.o
+[ 71%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/OAuth10Credentials.cpp.o
+[ 71%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/RecordSet.cpp.o
+[ 71%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/OptionCallback.cpp.o
+[ 71%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/OptionException.cpp.o
+[ 71%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/OptionProcessor.cpp.o
+[ 71%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/OptionSet.cpp.o
+[ 72%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/PropertyFileConfiguration.cpp.o
+[ 72%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/RegExpValidator.cpp.o
+[ 72%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/OAuth20Credentials.cpp.o
+[ 72%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/ServerApplication.cpp.o
+[ 72%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/Subsystem.cpp.o
+[ 72%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/SystemConfiguration.cpp.o
+[ 72%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/POP3ClientSession.cpp.o
+[ 72%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/Timer.cpp.o
+[ 73%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/TimerTask.cpp.o
+[ 73%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/Validator.cpp.o
+[ 73%] Building CXX object source_subfolder/Util/CMakeFiles/Util.dir/src/XMLConfiguration.cpp.o
+[ 73%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/PartHandler.cpp.o
+[ 73%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/PartSource.cpp.o
+[ 74%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/PartStore.cpp.o
+[ 74%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/PollSet.cpp.o
+[ 74%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/QuotedPrintableDecoder.cpp.o
+[ 74%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/QuotedPrintableEncoder.cpp.o
+[ 74%] Linking CXX static library ../../lib/libPocoUtil.a
+[ 74%] Built target Util
+[ 74%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/Add.cpp.o
+[ 74%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/RawSocket.cpp.o
+[ 75%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/RawSocketImpl.cpp.o
+[ 76%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/AutoDetectStream.cpp.o
+[ 76%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/RemoteSyslogChannel.cpp.o
+[ 76%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/RemoteSyslogListener.cpp.o
+[ 76%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/Compress.cpp.o
+[ 76%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/SMTPChannel.cpp.o
+[ 76%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/SMTPClientSession.cpp.o
+[ 76%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/ServerSocket.cpp.o
+[ 76%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/Decompress.cpp.o
+[ 77%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/ServerSocketImpl.cpp.o
+[ 77%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/Socket.cpp.o
+[ 77%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/SocketAddress.cpp.o
+[ 77%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/SocketAddressImpl.cpp.o
+[ 77%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/SocketImpl.cpp.o
+[ 77%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/Delete.cpp.o
+[ 78%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/SocketNotification.cpp.o
+[ 78%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/Keep.cpp.o
+[ 78%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/SocketNotifier.cpp.o
+[ 78%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/SocketReactor.cpp.o
+[ 79%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ParseCallback.cpp.o
+[ 79%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/SocketStream.cpp.o
+[ 79%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/PartialStream.cpp.o
+[ 79%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/Rename.cpp.o
+[ 79%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/StreamSocket.cpp.o
+[ 79%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/StreamSocketImpl.cpp.o
+[ 79%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/Replace.cpp.o
+[ 80%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/StringPartSource.cpp.o
+[ 80%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/SkipCallback.cpp.o
+[ 80%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/TCPServer.cpp.o
+[ 80%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/TCPServerConnection.cpp.o
+[ 80%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipArchive.cpp.o
+[ 80%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/TCPServerConnectionFactory.cpp.o
+[ 80%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/TCPServerDispatcher.cpp.o
+[ 81%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipArchiveInfo.cpp.o
+[ 82%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/TCPServerParams.cpp.o
+[ 82%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipCommon.cpp.o
+[ 82%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/WebSocket.cpp.o
+[ 82%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Row.cpp.o
+[ 82%] Building CXX object source_subfolder/Net/CMakeFiles/Net.dir/src/WebSocketImpl.cpp.o
+[ 82%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipDataInfo.cpp.o
+[ 82%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipException.cpp.o
+[ 82%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipFileInfo.cpp.o
+[ 83%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipLocalFileHeader.cpp.o
+[ 83%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipManipulator.cpp.o
+[ 83%] Linking CXX static library ../../lib/libPocoNet.a
+[ 83%] Built target Net
+[ 83%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/Array.cpp.o
+[ 83%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipOperation.cpp.o
+[ 83%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipStream.cpp.o
+[ 83%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/Binary.cpp.o
+[ 84%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/RowFilter.cpp.o
+[ 84%] Building CXX object source_subfolder/Zip/CMakeFiles/Zip.dir/src/ZipUtil.cpp.o
+[ 84%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/Connection.cpp.o
+[ 84%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/Cursor.cpp.o
+[ 85%] Linking CXX static library ../../lib/libPocoZip.a
+[ 85%] Built target Zip
+[ 85%] Building CXX object source_subfolder/Redis/CMakeFiles/Redis.dir/src/Array.cpp.o
+[ 86%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/Database.cpp.o
+[ 86%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/DeleteRequest.cpp.o
+[ 87%] Building CXX object source_subfolder/Redis/CMakeFiles/Redis.dir/src/AsyncReader.cpp.o
+[ 87%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/Document.cpp.o
+[ 87%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/RowFormatter.cpp.o
+[ 87%] Building CXX object source_subfolder/Redis/CMakeFiles/Redis.dir/src/Client.cpp.o
+[ 87%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/RowIterator.cpp.o
+[ 87%] Building CXX object source_subfolder/Redis/CMakeFiles/Redis.dir/src/Command.cpp.o
+[ 87%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/Element.cpp.o
+[ 87%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/GetMoreRequest.cpp.o
+[ 88%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/InsertRequest.cpp.o
+[ 88%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/JavaScriptCode.cpp.o
+[ 88%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/SQLChannel.cpp.o
+[ 88%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/KillCursorsRequest.cpp.o
+[ 88%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/AcceptCertificateHandler.cpp.o
+[ 88%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/Message.cpp.o
+[ 88%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/CertificateHandlerFactory.cpp.o
+[ 88%] Building CXX object source_subfolder/Redis/CMakeFiles/Redis.dir/src/Error.cpp.o
+[ 88%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/MessageHeader.cpp.o
+[ 89%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/CertificateHandlerFactoryMgr.cpp.o
+[ 89%] Building CXX object source_subfolder/Redis/CMakeFiles/Redis.dir/src/Exception.cpp.o
+[ 90%] Building CXX object source_subfolder/Redis/CMakeFiles/Redis.dir/src/RedisEventArgs.cpp.o
+[ 90%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/ObjectId.cpp.o
+[ 90%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/ConsoleCertificateHandler.cpp.o
+[ 90%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Session.cpp.o
+[ 90%] Building CXX object source_subfolder/Redis/CMakeFiles/Redis.dir/src/RedisStream.cpp.o
+[ 91%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/QueryRequest.cpp.o
+[ 91%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/Context.cpp.o
+[ 91%] Building CXX object source_subfolder/Redis/CMakeFiles/Redis.dir/src/Type.cpp.o
+[ 91%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/RegularExpression.cpp.o
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp: In member function ‘void Poco::Net::Context::createSSLContext()’:
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:383:30: warning: ‘const SSL_METHOD* TLSv1_method(’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1877) [-Wdeprecated-declarations]
+   _pSSLContext = SSL_CTX_new(TLSv1_method());
+                              ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:383:43: warning: ‘const SSL_METHOD* TLSv1_method(’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1877) [-Wdeprecated-declarations]
+   _pSSLContext = SSL_CTX_new(TLSv1_method());
+                                           ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:405:31: warning: ‘const SSL_METHOD* TLSv1_client_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1879) [-Wdeprecated-declarations]
+    _pSSLContext = SSL_CTX_new(TLSv1_client_method());
+                               ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:405:51: warning: ‘const SSL_METHOD* TLSv1_client_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1879) [-Wdeprecated-declarations]
+    _pSSLContext = SSL_CTX_new(TLSv1_client_method());
+                                                   ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:408:31: warning: ‘const SSL_METHOD* TLSv1_server_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1878) [-Wdeprecated-declarations]
+    _pSSLContext = SSL_CTX_new(TLSv1_server_method());
+                               ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:408:51: warning: ‘const SSL_METHOD* TLSv1_server_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1878) [-Wdeprecated-declarations]
+    _pSSLContext = SSL_CTX_new(TLSv1_server_method());
+                                                   ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:417:40: warning: ‘const SSL_METHOD* TLSv1_1_client_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1885) [-Wdeprecated-declarations]
+             _pSSLContext = SSL_CTX_new(TLSv1_1_client_method());
+                                        ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:417:62: warning: ‘const SSL_METHOD* TLSv1_1_client_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1885) [-Wdeprecated-declarations]
+             _pSSLContext = SSL_CTX_new(TLSv1_1_client_method());
+                                                              ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:420:40: warning: ‘const SSL_METHOD* TLSv1_1_server_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1884) [-Wdeprecated-declarations]
+             _pSSLContext = SSL_CTX_new(TLSv1_1_server_method());
+                                        ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:420:62: warning: ‘const SSL_METHOD* TLSv1_1_server_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1884) [-Wdeprecated-declarations]
+             _pSSLContext = SSL_CTX_new(TLSv1_1_server_method());
+                                                              ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:425:40: warning: ‘const SSL_METHOD* TLSv1_2_client_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1891) [-Wdeprecated-declarations]
+             _pSSLContext = SSL_CTX_new(TLSv1_2_client_method());
+                                        ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:425:62: warning: ‘const SSL_METHOD* TLSv1_2_client_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1891) [-Wdeprecated-declarations]
+             _pSSLContext = SSL_CTX_new(TLSv1_2_client_method());
+                                                              ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:428:40: warning: ‘const SSL_METHOD* TLSv1_2_server_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1890) [-Wdeprecated-declarations]
+             _pSSLContext = SSL_CTX_new(TLSv1_2_server_method());
+                                        ^
+/root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b/source_subfolder/NetSSL_OpenSSL/src/Context.cpp:428:62: warning: ‘const SSL_METHOD* TLSv1_2_server_method()’ is deprecated (declared at /root/.conan/data/openssl/1.1.1i/_/_/package/3a5f72c8cd50641b8efa6ed13e6914c6ced2747c/include/openssl/ssl.h:1890) [-Wdeprecated-declarations]
+             _pSSLContext = SSL_CTX_new(TLSv1_2_server_method());
+                                                              ^
+[ 91%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/ReplicaSet.cpp.o
+[ 91%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/HTTPSClientSession.cpp.o
+[ 91%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/SessionFactory.cpp.o
+[ 91%] Linking CXX static library ../../lib/libPocoRedis.a
+[ 91%] Built target Redis
+[ 92%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/SessionImpl.cpp.o
+[ 92%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/SessionPool.cpp.o
+[ 92%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/RequestMessage.cpp.o
+[ 92%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/HTTPSSessionInstantiator.cpp.o
+[ 92%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/ResponseMessage.cpp.o
+[ 93%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/HTTPSStreamFactory.cpp.o
+[ 93%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/SessionPoolContainer.cpp.o
+[ 94%] Building CXX object source_subfolder/MongoDB/CMakeFiles/MongoDB.dir/src/UpdateRequest.cpp.o
+[ 94%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/InvalidCertificateHandler.cpp.o
+[ 94%] Linking CXX static library ../../lib/libPocoMongoDB.a
+[ 94%] Built target MongoDB
+[ 94%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/KeyConsoleHandler.cpp.o
+[ 94%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/KeyFileHandler.cpp.o
+[ 94%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/PrivateKeyFactory.cpp.o
+[ 94%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/SimpleRowFormatter.cpp.o
+[ 94%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/PrivateKeyFactoryMgr.cpp.o
+[ 94%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Statement.cpp.o
+[ 95%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/PrivateKeyPassphraseHandler.cpp.o
+[ 95%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/RejectCertificateHandler.cpp.o
+[ 96%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/StatementCreator.cpp.o
+[ 96%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/SSLException.cpp.o
+[ 96%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/SSLManager.cpp.o
+[ 96%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/SecureSMTPClientSession.cpp.o
+[ 96%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/StatementImpl.cpp.o
+[ 97%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/SecureServerSocket.cpp.o
+[ 97%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Time.cpp.o
+[ 97%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/SecureServerSocketImpl.cpp.o
+[ 97%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/SecureSocketImpl.cpp.o
+[ 97%] Building CXX object source_subfolder/Data/CMakeFiles/Data.dir/src/Transaction.cpp.o
+[ 97%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/SecureStreamSocket.cpp.o
+[ 97%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/SecureStreamSocketImpl.cpp.o
+[ 98%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/Session.cpp.o
+[ 98%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/Utility.cpp.o
+[ 98%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/VerificationErrorArgs.cpp.o
+[ 98%] Building CXX object source_subfolder/NetSSL_OpenSSL/CMakeFiles/NetSSL.dir/src/X509Certificate.cpp.o
+[ 98%] Linking CXX static library ../../lib/libPocoNetSSL.a
+[ 98%] Built target NetSSL
+[ 98%] Linking CXX static library ../../lib/libPocoData.a
+[ 98%] Built target Data
+[ 98%] Building CXX object source_subfolder/Data/SQLite/CMakeFiles/DataSQLite.dir/src/Binder.cpp.o
+[ 99%] Building CXX object source_subfolder/Data/SQLite/CMakeFiles/DataSQLite.dir/src/Connector.cpp.o
+[ 99%] Building CXX object source_subfolder/Data/SQLite/CMakeFiles/DataSQLite.dir/src/Extractor.cpp.o
+[ 99%] Building CXX object source_subfolder/Data/SQLite/CMakeFiles/DataSQLite.dir/src/Notifier.cpp.o
+[ 99%] Building CXX object source_subfolder/Data/SQLite/CMakeFiles/DataSQLite.dir/src/SQLiteException.cpp.o
+[ 99%] Building CXX object source_subfolder/Data/SQLite/CMakeFiles/DataSQLite.dir/src/SQLiteStatementImpl.cpp.o
+[100%] Building CXX object source_subfolder/Data/SQLite/CMakeFiles/DataSQLite.dir/src/SessionImpl.cpp.o
+[100%] Building CXX object source_subfolder/Data/SQLite/CMakeFiles/DataSQLite.dir/src/Utility.cpp.o
+[100%] Linking CXX static library ../../../lib/libPocoDataSQLite.a
+[100%] Built target DataSQLite
+poco/1.9.4: Package 'b5718fd22dd3e307da5d809a5c1515a40651977b' built
+poco/1.9.4: Build folder /root/.conan/data/poco/1.9.4/_/_/build/b5718fd22dd3e307da5d809a5c1515a40651977b
+poco/1.9.4: Generated conaninfo.txt
+poco/1.9.4: Generated conanbuildinfo.txt
+poco/1.9.4: Generating the package
+poco/1.9.4: Package folder /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b
+poco/1.9.4: Calling package()
+Consolidate compiler generated dependencies of target Foundation
+[ 28%] Built target Foundation
+Consolidate compiler generated dependencies of target JSON
+Consolidate compiler generated dependencies of target Encodings
+Consolidate compiler generated dependencies of target XML
+[ 31%] Built target JSON
+Consolidate compiler generated dependencies of target Crypto
+[ 36%] Built target Encodings
+Consolidate compiler generated dependencies of target Net
+Consolidate compiler generated dependencies of target Data
+[ 40%] Built target Crypto
+[ 53%] Built target XML
+Consolidate compiler generated dependencies of target Util
+[ 59%] Built target Data
+Consolidate compiler generated dependencies of target DataSQLite
+[ 64%] Built target Util
+Consolidate compiler generated dependencies of target Zip
+[ 66%] Built target DataSQLite
+[ 84%] Built target Net
+[ 89%] Built target Zip
+Consolidate compiler generated dependencies of target Redis
+Consolidate compiler generated dependencies of target MongoDB
+Consolidate compiler generated dependencies of target NetSSL
+[ 91%] Built target Redis
+[ 95%] Built target MongoDB
+[100%] Built target NetSSL
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoConfigVersion.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AccessExpireLRUCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Unicode.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LRUCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Path_WIN32U.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ActiveMethod.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Base32Decoder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AccessExpireStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ListMap.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedLibrary_UNIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedMutex_UNIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DigestStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DateTimeFormat.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Platform.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FPEnvironment_QNX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DateTime.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/HashStatistic.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Base32Encoder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UTF32Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Task.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/BasicEvent.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Glob.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LogFile_STD.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RunnableAdapter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FileStreamFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows1250Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Activity.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ASCIIEncoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Timespan.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DirectoryIterator_UNIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Alignment.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FPEnvironment_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedMutex.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PatternFormatter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/CountingStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ArchiveStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ErrorHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UniqueExpireCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/InflatingStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SignalHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedLibrary_WIN32U.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RWLock_WINCE.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Debugger.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ExpireCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows1252Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/StreamUtil.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Hash.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/HashTable.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SimpleHashTable.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SyslogChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UTF16Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AbstractPriorityDelegate.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UTFString.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/HashFunction.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedMemory_POSIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DynamicStruct.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Poco.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MemoryStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PriorityDelegate.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DynamicAny.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UnicodeConverter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TextBufferIterator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Semaphore_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UnWindows.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ActiveResult.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/BufferAllocator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LocalDateTime.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/HexBinaryEncoder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AtomicCounter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/URIStreamFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Path_UNIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/StreamChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Path_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LoggingRegistry.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Platform_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedEvent_Android.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RandomStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/StreamConverter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedLibrary.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NotificationCenter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SplitterChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FIFOEvent.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PipeStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Observer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/StreamTokenizer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/EventArgs.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RWLock_Android.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LogFile_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Thread.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Manifest.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Process_WIN32U.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Latin9Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UTF8String.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedMemory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FIFOBufferStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Semaphore.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Mutex_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Timezone.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ExpireStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PriorityStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RWLock_POSIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Environment.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Platform_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedLibrary_HPUX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TextConverter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PipeImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/HashSet.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Mutex_POSIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Pipe.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LoggingFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Process_WINCE.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/zconf.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UniqueAccessExpireCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RWLock.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/File_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Base64Decoder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UniqueExpireStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Process_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/String.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/StrategyCollection.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RotateStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AccessExpirationDecorator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LineEndingConverter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Dynamic
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Dynamic/Struct.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Dynamic/VarIterator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Dynamic/Var.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Dynamic/VarHolder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Dynamic/Pair.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TaskNotification.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SortedDirectoryIterator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NumberParser.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Process_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows1251Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Any.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Event_POSIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Platform_POSIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/File.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Event_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Array.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UnbufferedStreamBuf.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Delegate.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DigestEngine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Notification.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AccessExpireCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LogFile.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FPEnvironment_C99.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Logger.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DateTimeParser.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ActiveStarter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ByteOrder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UniqueAccessExpireLRUCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Mutex_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ActiveDispatcher.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FormattingChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MetaObject.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Base64Encoder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/BinaryWriter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Channel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PriorityEvent.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/URI.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FPEnvironment_DEC.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Timer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Mutex.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FileStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PriorityNotificationQueue.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FunctionPriorityDelegate.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TeeStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Config.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FPEnvironment.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Thread_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NumericString.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TypeList.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Environment_WINCE.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/BufferedStreamBuf.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PipeImpl_POSIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PriorityExpire.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Message.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NullChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Nullable.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DefaultStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PurgeStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/File_UNIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DirectoryIteratorStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Instantiator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NestedDiagnosticContext.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AutoPtr.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FunctionDelegate.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Process_UNIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Mutex_WINCE.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedEvent_WIN32U.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UUID.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/WindowsConsoleChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Foundation.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Environment_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NotificationStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSONString.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SingletonHolder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedEvent.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NumberFormatter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Buffer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Semaphore_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ScopedLock.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Thread_POSIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ThreadPool.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FileStream_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SimpleFileChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ExpireLRUCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Path_WINCE.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UUIDGenerator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AbstractObserver.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DynamicFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Runnable.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Condition.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UTF8Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ConsoleChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ActiveRunnable.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FPEnvironment_SUN.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ExpirationDecorator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedMemory_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/File_WIN32U.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TemporaryFile.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Semaphore_POSIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ThreadLocal.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Latin1Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/EventChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ValidArgs.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AbstractCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ThreadTarget.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LinearHashTable.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Version.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/BufferedBidirectionalStreamBuf.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedMutex_Android.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Thread_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Thread_WINCE.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ClassLibrary.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MetaProgramming.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Random.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Expire.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/StreamCopier.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Formatter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MD4Engine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AutoReleasePool.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/HashMap.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Checksum.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/URIStreamOpener.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FileStream_POSIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/zlib.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Optional.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LogStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Process.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Void.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Error.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NObserver.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/BinaryReader.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DirectoryIterator_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Ascii.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MD5Engine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SynchronizedObject.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/StringTokenizer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UniqueAccessExpireStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/HMACEngine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Stopwatch.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Bugcheck.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/EventLogChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FPEnvironment_DUMMY.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedPtr.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AsyncChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DirectoryWatcher.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedMutex_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RWLock_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NotificationQueue.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedEvent_UNIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NullStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RegularExpression.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ScopedUnlock.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Token.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Event.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DirectoryIterator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TimedNotificationQueue.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Event_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MemoryPool.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Format.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AbstractDelegate.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FIFOBuffer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LogFile_WIN32U.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FileChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/FIFOStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RecursiveDirectoryIteratorImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedEvent_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DateTimeFormatter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Environment_WIN32U.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PipeImpl_DUMMY.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Types.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/UniqueExpireLRUCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DynamicAnyHolder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ClassLoader.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TextIterator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Clock.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/KeyValueArgs.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedLibrary_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DirectoryIterator_WIN32U.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Path.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SHA1Engine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RefCountedObject.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TaskManager.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Exception.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedLibrary_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PipeImpl_WIN32.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/PBKDF2Engine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AbstractStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Latin2Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/File_WINCE.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ObjectPool.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Environment_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/File_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/LRUStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RecursiveDirectoryIterator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DeflatingStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedMutex_WIN32U.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Timestamp.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/AbstractEvent.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Environment_UNIX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/TextEncoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/RWLock_VX.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Configurable.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SharedMemory_DUMMY.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Tuple.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/NamedTuple.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/HexBinaryDecoder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoFoundation.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoFoundationTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoFoundationTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoFoundationConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoFoundationConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows1254Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_14Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows932Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows1253Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_8Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows1255Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_6Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DoubleByteEncoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_5Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Encodings.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_7Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_4Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows949Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_13Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_11Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_10Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_16Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_9Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/ISO8859_3Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows874Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows936Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows950Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows1258Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows1256Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Windows1257Encoding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoEncodings.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoEncodingsTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoEncodingsTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoEncodingsConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoEncodingsConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/expat.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/ValueTraits.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/XMLWriter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/Content.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/XMLString.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/XMLStreamParserException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/XMLStreamParser.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/Name.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/ParserEngine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/expat_external.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/XMLStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/NamespaceStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/XML.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/NamePool.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/XMLException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/XML/QName.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/AbstractNode.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DOMSerializer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/Document.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/EntityReference.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DOMObject.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DocumentFragment.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/EventException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/NodeFilter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/NamedNodeMap.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/NodeList.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/Node.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/Comment.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/EventTarget.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/AbstractContainerNode.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/Element.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DTDMap.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/Entity.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DocumentEvent.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/EventDispatcher.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DOMImplementation.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/AttrMap.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/ChildNodesList.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DOMWriter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DOMParser.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/CharacterData.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/ProcessingInstruction.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/AutoPtr.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/Notation.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/TreeWalker.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/Attr.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/NodeAppender.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/EventListener.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/NodeIterator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/Text.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DOMException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/CDATASection.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/Event.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/MutationEvent.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DOMBuilder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/ElementsByTagNameList.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/DOM/DocumentType.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/LexicalHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/Attributes.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/LocatorImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/ErrorHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/DefaultHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/NamespaceSupport.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/ContentHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/WhitespaceFilter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/Locator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/EntityResolver.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/XMLReader.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/SAXException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/XMLFilter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/XMLFilterImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/SAXParser.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/DTDHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/InputSource.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/DeclHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/EntityResolverImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/SAX/AttributesImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoXML.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoXMLTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoXMLTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoXMLConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoXMLConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/Query.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/ParserImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/PrintHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/ParseHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/JSONException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/Handler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/Array.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/Parser.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/Object.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/TemplateCache.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/Stringifier.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/JSON.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/JSON/Template.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoJSON.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoJSONTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoJSONTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoJSONConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoJSONConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/AbstractConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/LayeredConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/Validator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/MapConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/Units.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/WinService.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/LoggingSubsystem.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/OptionException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/XMLConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/Application.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/SystemConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/Option.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/IniFileConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/WinRegistryConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/Timer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/Subsystem.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/FilesystemConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/OptionCallback.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/ConfigurationView.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/RegExpValidator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/JSONConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/ServerApplication.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/WinRegistryKey.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/OptionSet.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/Util.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/TimerTask.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/HelpFormatter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/LoggingConfigurator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/PropertyFileConfiguration.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/OptionProcessor.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/TimerTaskAdapter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/IntValidator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Util/ConfigurationMapper.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoUtil.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoUtilTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoUtilTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoUtilConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoUtilConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketAddressImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPBasicStreamBuf.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPBasicCredentials.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPServer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ICMPv4PacketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SMTPChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/AbstractHTTPRequestHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketConnector.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/MailRecipient.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/DialogSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/MessageHeader.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/NTPPacket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ICMPEventArgs.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/WebSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/QuotedPrintableEncoder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/MultipartWriter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ParallelSocketReactor.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/MultipartReader.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ICMPSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/RawSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPChunkedStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/StreamSocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/NullPartHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/PartStore.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPServerConnectionFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPStreamFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPServerRequestImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/FTPClientSession.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ParallelSocketAcceptor.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPMessage.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/StreamSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketNotification.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/MulticastSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPCredentials.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/TCPServer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPServerSession.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPBufferAllocator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/RemoteSyslogListener.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/FilePartSource.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPRequest.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPRequestHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPSessionInstantiator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPIOStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketAddress.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/DatagramSocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/PollSet.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTMLForm.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/WebSocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketAcceptor.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPAuthenticationParams.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPSession.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPHeaderStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPCookie.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/DatagramSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HostEntry.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/IPAddressImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPServerResponseImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/DNS.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/TCPServerConnection.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPServerParams.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/IPAddress.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPDigestCredentials.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/PartHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ICMPPacketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ServerSocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ICMPSocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/FTPStreamFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPServerConnection.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/TCPServerDispatcher.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/PartSource.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPFixedLengthStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/NameValueCollection.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/MailMessage.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPClientSession.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ServerSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/MediaType.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPServerResponse.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/QuotedPrintableDecoder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPSessionFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/RemoteSyslogChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/MailStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/OAuth20Credentials.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPRequestHandlerFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPResponse.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/POP3ClientSession.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/TCPServerConnectionFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/TCPServerParams.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/Net.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ICMPPacket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/NTPClient.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SMTPClientSession.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPServerRequest.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/NTPEventArgs.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/NetException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketDefs.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ICMPClient.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/RawSocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/OAuth10Credentials.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/NetworkInterface.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketReactor.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SocketNotifier.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/Socket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/StringPartSource.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoNet.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoNetTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoNetTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoNetConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoNetConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/Document.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/PoolableConnectionFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/MessageHeader.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/JavaScriptCode.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/GetMoreRequest.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/DeleteRequest.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/InsertRequest.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/Element.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/BSONReader.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/ReplicaSet.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/Cursor.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/Array.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/Database.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/KillCursorsRequest.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/Message.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/QueryRequest.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/ObjectId.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/BSONWriter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/Binary.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/ResponseMessage.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/UpdateRequest.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/Connection.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/RegularExpression.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/MongoDB.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/MongoDB/RequestMessage.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoMongoDB.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoMongoDBTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoMongoDBTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoMongoDBConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoMongoDBConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/PoolableConnectionFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/RedisStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/Array.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/AsyncReader.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/Redis.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/Command.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/RedisEventArgs.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/Type.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/Client.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/Error.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Redis/Exception.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoRedis.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoRedisTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoRedisTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoRedisConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoRedisConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPSClientSession.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SecureStreamSocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPSSessionInstantiator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/CertificateHandlerFactoryMgr.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/KeyConsoleHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SSLManager.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/VerificationErrorArgs.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SecureServerSocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/PrivateKeyFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SSLException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SecureSocketImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/KeyFileHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/Utility.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/AcceptCertificateHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/ConsoleCertificateHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/X509Certificate.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/InvalidCertificateHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/PrivateKeyPassphraseHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/PrivateKeyFactoryMgr.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/Context.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/Session.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/CertificateHandlerFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SecureSMTPClientSession.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/HTTPSStreamFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/NetSSL.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SecureStreamSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/SecureServerSocket.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Net/RejectCertificateHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoNetSSL.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoNetSSLTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoNetSSLTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoNetSSLConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoNetSSLConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/RSADigestEngine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/Cipher.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/ECDSADigestEngine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/EVPPKey.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/ECKeyImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/KeyPairImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/CryptoTransform.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/DigestEngine.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/KeyPair.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/PKCS12Container.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/OpenSSLInitializer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/CipherFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/RSAKeyImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/CipherKeyImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/X509Certificate.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/CryptoStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/RSAKey.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/CipherImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/Crypto.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/CryptoException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/CipherKey.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/ECKey.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Crypto/RSACipherImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoCrypto.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoCryptoTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoCryptoTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoCryptoConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoCryptoConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Transaction.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/AbstractSessionImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Connector.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/LOBStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/TypeHandler.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SessionPool.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/ArchiveStrategy.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/BulkExtraction.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/RecordSet.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Binding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Date.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Time.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Position.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/DynamicDateTime.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/DynamicLOB.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Preparation.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/StatementImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/AbstractPreparator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SessionFactory.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SessionPoolContainer.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLChannel.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/AbstractPreparation.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/StatementCreator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SessionImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Data.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Limit.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/DataException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/RowFormatter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/LOB.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Range.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Column.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Row.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/AbstractExtractor.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Constants.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/AutoTransaction.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Statement.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Bulk.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SimpleRowFormatter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/MetaColumn.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/PooledSessionImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/PooledSessionHolder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/AbstractExtraction.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/RowIterator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/RowFilter.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/AbstractBinding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/AbstractBinder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Session.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/Extraction.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/BulkBinding.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoData.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoDataTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoDataTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoDataConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoDataConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite/Connector.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite/Binder.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite/Notifier.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite/SessionImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite/SQLite.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite/Utility.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite/SQLiteException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite/SQLiteStatementImpl.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Data/SQLite/Extractor.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoDataSQLite.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoDataSQLiteTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoDataSQLiteTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoDataSQLiteConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoDataSQLiteConfigVersion.cmake
+-- Up-to-date: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipArchive.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/Keep.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipFileInfo.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipException.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ParseCallback.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/Compress.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/Add.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/SkipCallback.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/Delete.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/AutoDetectStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/Replace.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipLocalFileHeader.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/Decompress.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipDataInfo.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipUtil.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipManipulator.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/Zip.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipOperation.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipCommon.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/PartialStream.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/ZipArchiveInfo.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/include/Poco/Zip/Rename.h
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/libPocoZip.a
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoZipTargets.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoZipTargets-release.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoZipConfig.cmake
+-- Installing: /root/.conan/data/poco/1.9.4/_/_/package/b5718fd22dd3e307da5d809a5c1515a40651977b/lib/cmake/Poco/PocoZipConfigVersion.cmake
+poco/1.9.4 package(): Packaged 1 file: LICENSE
+poco/1.9.4 package(): Packaged 750 '.h' files
+poco/1.9.4 package(): Packaged 13 '.a' files
+poco/1.9.4: Package 'b5718fd22dd3e307da5d809a5c1515a40651977b' created
+poco/1.9.4: Created package revision 4bc5d78383cace715fd67f3576efe856
+conanfile.txt: Generator txt created conanbuildinfo.txt
+conanfile.txt: Generator cmake created conanbuildinfo.cmake
+conanfile.txt: Generated conaninfo.txt
+conanfile.txt: Generated graphinfo
++ cmake .. -DCMAKE_BUILD_TYPE=Release
+-- The C compiler identification is GNU 4.8.5
+-- The CXX compiler identification is GNU 4.8.5
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Current conanbuildinfo.cmake directory: /root/kyle/conan-example/build
+-- Conan: Checking correct version: 4.8
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/kyle/conan-example/build
++ cmake --build .
+[ 50%] Building CXX object CMakeFiles/md5.dir/md5.cpp.o
+[100%] Linking CXX executable bin/md5
+[100%] Built target md5
++ bin/md5
+c3fcd3d76192e4007dfb496cca67e13b
