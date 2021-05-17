@@ -1,0 +1,31 @@
+Exporting package recipe
+hello/0.1@demo/testing: A new conanfile.py version was exported
+hello/0.1@demo/testing: Folder: /root/.conan/data/hello/0.1/demo/testing/export
+hello/0.1@demo/testing: Using the exported files summary hash as the recipe revision: bba8f92abfeb2d792a934d62d408c28d 
+hello/0.1@demo/testing: Exported revision: bba8f92abfeb2d792a934d62d408c28d
+
+Configuration:
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++
+compiler.version=4.8
+os=Linux
+os_build=Linux
+[options]
+[build_requires]
+[env]
+
+hello/0.1@demo/testing: Forced build from source
+Installing package: hello/0.1@demo/testing
+Requirements
+    hello/0.1@demo/testing from local cache - Cache
+Packages
+    hello/0.1@demo/testing:e5ac722d270cf7c45ba6c1301f2e878770b1eea3 - Build
+
+Installing (downloading, building) binaries...
+hello/0.1@demo/testing: Configuring sources in /root/.conan/data/hello/0.1/demo/testing/source
+Cloning into 'hello'...
+
