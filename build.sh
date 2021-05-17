@@ -10,6 +10,7 @@ pushd build
 conan install .. --build=missing
 # conan install .. --build=missing -r=demo-conan-virtual -pr ./my_profile
 
+# .. ->  source code, CMakeLists.txt
 cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 
