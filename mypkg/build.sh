@@ -1,4 +1,11 @@
 # build
+# 1 -> 2 -> 3
+# conan create . demo/testing
+# conan create . demo/testing -pr my_gcc49_debug_profile
+
+# omitting user & channel -> poco/1.9.4/_/_/package
+# conan create .
+
 # 1. export conanfile.py to local cache
 conan export . demo/testing 
 
