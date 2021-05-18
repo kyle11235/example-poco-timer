@@ -4,6 +4,16 @@ from conans import ConanFile, CMake, tools
 
 
 class HelloTestConan(ConanFile):
+
+    # 1. conan test test_package hello/0.1@demo/testing
+    # 2. requires = "hello/0.1@demo/testing"
+
+    # An important difference with respect to standard package recipes is that 
+    # you don’t have to declare a requires attribute to depend on the tested hello/0.1@demo/testing package 
+    # as the requires will automatically be injected by Conan during the run. 
+    # However, if you choose to declare it explicitly, it will work, 
+    # but you will have to remember to bump the version, and possibly also the user and channel if you decide to change them.
+
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
 
@@ -14,6 +24,7 @@ class HelloTestConan(ConanFile):
         cmake.configure()
         cmake.build()
 
+    # copy hello/0.1@demo/testing's shared lib into bin, example.cpp -> #include "hello.h"
     def imports(self):
         self.copy("*.dll", dst="bin", src="bin")
         self.copy("*.dylib*", dst="bin", src="lib")
