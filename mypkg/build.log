@@ -19,13 +19,115 @@ os_build=Linux
 [env]
 
 hello/0.1@demo/testing: Forced build from source
-Installing package: hello/0.1@demo/testing
+hello/0.1@demo/testing (test package): Installing package
 Requirements
     hello/0.1@demo/testing from local cache - Cache
 Packages
     hello/0.1@demo/testing:e5ac722d270cf7c45ba6c1301f2e878770b1eea3 - Build
 
 Installing (downloading, building) binaries...
+hello/0.1@demo/testing: WARN: Build folder is dirty, removing it: /root/.conan/data/hello/0.1/demo/testing/build/e5ac722d270cf7c45ba6c1301f2e878770b1eea3
 hello/0.1@demo/testing: Configuring sources in /root/.conan/data/hello/0.1/demo/testing/source
 Cloning into 'hello'...
+remote: Enumerating objects: 34, done.
+remote: Total 34 (delta 0), reused 0 (delta 0), pack-reused 34
+Unpacking objects: 100% (34/34), done.
+hello/0.1@demo/testing: Copying sources to build folder
+hello/0.1@demo/testing: Building your package in /root/.conan/data/hello/0.1/demo/testing/build/e5ac722d270cf7c45ba6c1301f2e878770b1eea3
+hello/0.1@demo/testing: Generator cmake created conanbuildinfo.cmake
+hello/0.1@demo/testing: Calling build()
+-- The C compiler identification is GNU 4.8.5
+-- The CXX compiler identification is GNU 4.8.5
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: called inside local cache
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Adjusting fPIC flag (ON)
+-- Conan: Checking correct version: 4.8
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
 
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/.conan/data/hello/0.1/demo/testing/build/e5ac722d270cf7c45ba6c1301f2e878770b1eea3
+[ 25%] Building CXX object CMakeFiles/hello.dir/hello.cpp.o
+[ 50%] Linking CXX static library lib/libhello.a
+[ 50%] Built target hello
+[ 75%] Building CXX object CMakeFiles/greet.dir/main.cpp.o
+[100%] Linking CXX executable bin/greet
+[100%] Built target greet
+hello/0.1@demo/testing: Package 'e5ac722d270cf7c45ba6c1301f2e878770b1eea3' built
+hello/0.1@demo/testing: Build folder /root/.conan/data/hello/0.1/demo/testing/build/e5ac722d270cf7c45ba6c1301f2e878770b1eea3
+hello/0.1@demo/testing: Generated conaninfo.txt
+hello/0.1@demo/testing: Generated conanbuildinfo.txt
+hello/0.1@demo/testing: Generating the package
+hello/0.1@demo/testing: Package folder /root/.conan/data/hello/0.1/demo/testing/package/e5ac722d270cf7c45ba6c1301f2e878770b1eea3
+hello/0.1@demo/testing: Calling package()
+hello/0.1@demo/testing package(): Packaged 1 '.h' file: hello.h
+hello/0.1@demo/testing package(): Packaged 1 '.a' file: libhello.a
+hello/0.1@demo/testing: Package 'e5ac722d270cf7c45ba6c1301f2e878770b1eea3' created
+hello/0.1@demo/testing: Created package revision c6028839c9b9df6e3642d4329ed50ce4
+hello/0.1@demo/testing (test package): Generator txt created conanbuildinfo.txt
+hello/0.1@demo/testing (test package): Generator cmake created conanbuildinfo.cmake
+hello/0.1@demo/testing (test package): Generated conaninfo.txt
+hello/0.1@demo/testing (test package): Generated graphinfo
+Using lockfile: '/root/kyle/conan-example/mypkg/test_package/build/14e0cdfaca04e2acc0576ed87609a7a5c25d6ca6/conan.lock'
+Using cached profile from lockfile
+hello/0.1@demo/testing (test package): Calling build()
+-- The CXX compiler identification is GNU 4.8.5
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Conan: called by CMake conan helper
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Conan: Checking correct version: 4.8
+-- Conan: C++ stdlib: libstdc++
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DATAROOTDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /root/kyle/conan-example/mypkg/test_package/build/14e0cdfaca04e2acc0576ed87609a7a5c25d6ca6
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.o
+[100%] Linking CXX executable bin/example
+[100%] Built target example
+hello/0.1@demo/testing (test package): Running test()
+Hello World Release!
