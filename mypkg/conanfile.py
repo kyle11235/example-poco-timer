@@ -19,7 +19,7 @@ class HelloConan(ConanFile):
             del self.options.fPIC
 
     def source(self):
-        self.run("git clone https://github.com/conan-io/hello.git")
+        self.run("git clone https://github.com.cnpmjs.org/conan-io/hello.git")
         # This small hack might be useful to guarantee proper /MT /MD linkage
         # in MSVC if the packaged project doesn't have variables to set it
         # properly
