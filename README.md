@@ -1,38 +1,29 @@
-# Poco MD5 Example
 
-Example of and MD5 calculation app using POCO C++ libraries installed with Conan C/C++ package manager.
+# conan example
 
-Mostly used to run the conan.io getting started: https://docs.conan.io/en/latest/getting_started.html
+- prepare env
 
-## Compiling steps
+        - install conan
+        please go to the official guide
+        I installed it on centos in python virtualenv
+        
+        Conan version 1.35.2
+        
+        - install g++
+        yum group install "Development Tools"
+        
+        - install cmake
+        export CXX=/usr/bin/g++
 
-1. Create a build directory:
+        - install bzip2-devel
+        yum install -y bzip2-devel.x86_64
 
-    ```
-    $ mkdir build && cd build
-    ```
+        - configure conan repo
+        conan remote add demo-conan-local http://xxx:8081/artifactory/api/conan/demo-conan-local
+        conan user -p apikey_xxx -r demo-conan-local myusername
+        adjust setting according to the prompt error message
 
-2. Install dependencies (Poco -> OpenSSL -> zlib):
+- test
 
-    ```
-    $ conan install ..
-    ```
+        ./build.sh
 
-3. Configure the CMake project (Using MSVC 16 in this example):
-
-    ```
-    $ cmake .. -G "Visual Studio 16 2019"
-    ```
-
-4. Build it:
-
-    ```
-    $ cmake --build . --config Release
-    ```
-
-5. Run the application:
-
-    ```
-    $ .\bin\md5.exe
-    c3fcd3d76192e4007dfb496cca67e13b
-    ```
