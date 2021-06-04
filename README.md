@@ -80,7 +80,10 @@
                 
                 conan remote list
 
-        - add repo   
+        - add repo
+
+                conan remote add demo-conan-virtual http://x.x.x.x:8081/artifactory/api/conan/demo-conan-virtual
+                conan user -p apikey_xxx -r demo-conan-virtual kyle   
         
                 conan remote add demo-conan-local http://x.x.x.x:8081/artifactory/api/conan/demo-conan-local
                 conan user -p apikey_xxx -r demo-conan-local kyle
