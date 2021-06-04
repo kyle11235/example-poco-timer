@@ -1,7 +1,7 @@
 # 1. export conanfile.py to local cache
 conan export . demo/testing 
 
-# 2. install pkg, force build from source
+# 2. run conanfile.py, install pkg, force build from source
 conan install hello/0.1@demo/testing --build=hello
 
 # like building missing pkgs, my pkg build happens in
