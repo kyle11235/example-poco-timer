@@ -19,9 +19,3 @@ conan test test_package hello/0.1@demo/testing
 
 # upload
 conan upload hello/0.1@demo/testing --all -r=demo-conan-local
-
-# test resolve
-conan remove "hello*"
-conan install hello/0.1@demo/testing --build=never -r=demo-conan-virtual
-conan test test_package hello/0.1@demo/testing
-
